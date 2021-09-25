@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>IG model</title>
+	<style>
+		body {
+			margin-left: -150px;
+		}
+		#info {
+			position: absolute;
+			top: 10px;
+			left: 38%;
+			width: 250px;
+			text-align: center;
+			z-index: 200;
+			display:block;
+			color: white;
+		}
+	</style>
+	<style type="text/css">
+		.tg  {border:none;border-collapse:collapse;border-spacing:-2;
+				margin-left:45%; margin-top:10px;}
+		.tg td{border-style:solid;border-width:0px;font-family:Arial, sans-serif;font-size:12px;overflow:hidden;
+		  padding:1px 1px;word-break:normal;}
+		.tg th{border-style:solid;border-width:0px;font-family:Arial, sans-serif;font-size:12px;font-weight:normal;
+		  overflow:hidden;padding:1px 1px;word-break:normal;}
+		.tg .tg-baqh{text-align:center;vertical-align:top}
+		.tg .tg-amwm{font-weight:bold;text-align:center;vertical-align:top}
+		.tg .tg-0lax{text-align:left;vertical-align:top}
+	</style>
+</head>
+
+<body>
+	<div id="info">Spaceship Thrust: 0</div>
+	<canvas id="scene"></canvas>
+	<script src="https://unpkg.com/three@0.87.1/build/three.js"></script>
+	<script src="https://unpkg.com/three@0.87.1/examples/js/controls/OrbitControls.js"></script>
+	<script src="https://unpkg.com/three@0.87.1/examples/js/loaders/GLTFLoader.js"></script>
+	<script src="js/main.js"></script>
+
+	<table class="tg">
+		<thead>
+		  <tr>
+			<th class="tg-amwm">Ship</th>
+			<th class="tg-amwm">Camera</th>
+		  </tr>
+		</thead>
+		<tbody>
+		  <tr>
+			<td class="tg-baqh">(←) Rotate Left</td>
+			<td class="tg-baqh">(1) Camera 1</td>
+		  </tr>
+		  <tr>
+			<td class="tg-baqh">(→) Rotate Right</td>
+			<td class="tg-baqh">(2) Camera 2</td>
+		  </tr>
+		  <tr>
+			<td class="tg-0lax">(↑) Increase Thrust</td>
+			<td class="tg-0lax">(3) Orbital Camera</td>
+		  </tr>
+		  <tr>
+			<td class="tg-0lax">(↓) Decrease Thrust</td>
+			<td class="tg-0lax"></td>
+		  </tr>
+		  <tr>
+			<td class="tg-0lax">(W) Engage/Disengage<br>Wings</td>
+			<td class="tg-0lax"></td>
+		  </tr>
+		  <tr>
+			<td class="tg-0lax">(W) Turn On/Off<br>Engines</td>
+			<td class="tg-0lax"></td>
+		  </tr>
+		</tbody>
+		</table>
+
+</body>
+
+</html>
